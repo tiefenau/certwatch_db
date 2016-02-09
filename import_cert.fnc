@@ -68,6 +68,7 @@ BEGIN
 				RETURNING ca.ID
 					INTO t_caID;
 		END IF;
+		t_issuerCAID := t_caID;
 	END IF;
 
 	FOR l_ca IN (
